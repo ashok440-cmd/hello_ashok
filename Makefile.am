@@ -1,10 +1,10 @@
-all : helo
+all : test
 
-helo : helo.o
-        gcc -o helo helo.o 
+test : test.o
+        gcc -o test test.o 
 
-helo.o : helo.c
-        gcc -c helo.c
+test.o : test.c
+        gcc -c test.c
 
 clean :
-        rm helo *.o
+        rm test *.o
