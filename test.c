@@ -1,18 +1,6 @@
-#include <gtk/gtk.h>
-
-int main(int argc, char *argv[])
-{
-    GtkBuilder *gtkBuilder;
-    GtkWidget *window;
-    gtk_init(&argc, &argv);
-    
-    gtkBuilder = gtk_builder_new();
-    gtk_builder_add_from_file(gtkBuilder, "test.glade", NULL);
-    window = GTK_WIDGET(gtk_builder_get_object(gtkBuilder, "mywindow new git "));
-    
-    g_object_unref(G_OBJECT(gtkBuilder));
-    gtk_widget_show(window);
-    gtk_main();
-    
+#include <stdio.h>
+ 
+int main(int argc, char *argv[]){
+    printf("Hello world!\n");
     return 0;
 }
